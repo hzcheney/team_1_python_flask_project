@@ -1,3 +1,0 @@
-[submodule "dashboard_app"]
-	path = dashboard_app
-	url = git@github.com:hzcheney/Login-System-with-Python-Flask-and-MySQL.git
