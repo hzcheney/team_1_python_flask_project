@@ -13,7 +13,7 @@ docker run --rm -d -v mysql:/var/lib/mysql \
 mysql:5.7
 
 # docker exec -ti mysqldb bash
-# docker exec -i mysqldb sh -c 'exec mysql -uroot -p"test"' < ./accounts.sql
+docker exec -i mysqldb sh -c 'exec mysql -uroot -p"test"' < ./accounts.sql
 
 echo " mysql succes"
 
@@ -22,7 +22,7 @@ cd dash_board_app
 docker build --tag dashboard .
 
  docker run \
-  --rm -d \
+  --rm  \
   --network mysqlnet \
   --name flask_container \
   -p 5000:5000 \

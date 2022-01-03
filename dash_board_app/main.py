@@ -20,9 +20,7 @@ app.config['MYSQL_DB'] = 'demo'
 # Intialize MySQL
 mysql = MySQL(app)
 
-# http://localhost:5000/pythonlogin/ - this will be the login page, we need to use both GET and POST requests
 @app.route('/', methods=['GET', 'POST'])
-@app.route('/pythonlogin/', methods=['GET', 'POST'])
 def login():
 # Output message if something goes wrong...
     # Check if "username" and "password" POST requests exist (user submitted form)
@@ -53,7 +51,7 @@ def login():
 
 # http://localhost:5000/pythinlogin/register 
 # This will be the registration page, we need to use both GET and POST requests
-@app.route('/pythonlogin/register', methods=['GET', 'POST'])
+@app.route('/register', methods=['GET', 'POST'])
 def register():
     # Check if "username", "password" and "email" POST requests exist (user submitted form)
     if request.method == 'POST' and 'username' in request.form and 'password' in request.form and 'email' in request.form:
@@ -91,7 +89,7 @@ def register():
 # http://localhost:5000/pythinlogin/home 
 # This will be the home page, only accessible for loggedin users
 
-@app.route('/pythonlogin/home')
+@app.route('/home')
 def home():
     # Check if user is loggedin
     if 'loggedin' in session:
@@ -111,7 +109,7 @@ def home():
 
 
 # http://localhost:5000/pythinlogin/profile - this will be the profile page, only accessible for loggedin users
-@app.route('/pythonlogin/profile')
+@app.route('/profile')
 def profile():
     # Check if user is loggedin
     if 'loggedin' in session:
@@ -124,8 +122,7 @@ def profile():
     # User is not loggedin redirect to login page
     return redirect(url_for('login')) 
 
-# http://localhost:5000/python/logout - this will be the logout page
-@app.route('/pythonlogin/logout')
+@app.route('/logout')
 def logout():
     # Remove session data, this will log the user out
    session.pop('loggedin', None)
