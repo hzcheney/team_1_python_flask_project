@@ -12,6 +12,7 @@ docker run --rm -d -v mysql:/var/lib/mysql \
 -e MYSQL_ROOT_PASSWORD=test \
 mysql:5.7
 
+sleep 10
 # docker exec -ti mysqldb bash
 docker exec -i mysqldb sh -c 'exec mysql -uroot -p"test"' < ./accounts.sql
 
@@ -21,8 +22,8 @@ cd dash_board_app
 
 docker build --tag dashboard .
 
- docker run \
-  --rm -d \
+ docker run -d \
+  --rm \
   --network mysqlnet \
   --name flask_container \
   -p 5000:5000 \
