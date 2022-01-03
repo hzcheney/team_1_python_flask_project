@@ -12,7 +12,7 @@ docker run --rm -d -v mysql:/var/lib/mysql \
 -e MYSQL_ROOT_PASSWORD=test \
 mysql:5.7
 
-sleep 10
+sleep 20
 # docker exec -ti mysqldb bash
 docker exec -i mysqldb sh -c 'exec mysql -uroot -p"test"' < ./accounts.sql
 
