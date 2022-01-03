@@ -22,8 +22,10 @@ cd dash_board_app
 docker build --tag dashboard .
 
  docker run \
-  --rm  \
+  --rm -d \
   --network mysqlnet \
   --name flask_container \
   -p 5000:5000 \
   dashboard
+
+echo "请打开左下角远程浏览器访问5000端口查看，默认管理员用户及密码均为admin"
