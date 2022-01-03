@@ -21,4 +21,9 @@ cd dash_board_app
 
 docker build --tag dashboard .
 
-docker run --publish 5000:5000 dashboard
+ docker run \
+  --rm -d \
+  --network mysqlnet \
+  --name flask_container \
+  -p 5000:5000 \
+  dashboard
