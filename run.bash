@@ -29,4 +29,14 @@ docker build --tag dashboard .
   -p 5000:5000 \
   dashboard
 
+sleep 2
+ 
+echo " O))     
+          O))     
+   O))    O))  O))
+ O))  O)) O)) O)) 
+O))    O))O)O))   
+ O))  O)) O)) O)) 
+   O))    O))  O))
+                  "
 echo "请打开左下角远程浏览器访问5000端口查看，默认管理员用户及密码均为admin"

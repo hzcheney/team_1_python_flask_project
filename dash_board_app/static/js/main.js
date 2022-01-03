@@ -24,7 +24,7 @@ $(document).ready(function () {
         success: function (data) {
           $("#add_data_Modal").modal("hide");
           if (data == "success") {
-            window.location.href = "/pythonlogin/home";
+            window.location.href = "/home";
           }
         },
       });
@@ -64,7 +64,7 @@ $(document).ready(function () {
       success: function (data) {
         $("#edit_data_Modal").modal("hide");
         if (data == "success") {
-          window.location.href = "/pythonlogin/home";
+          window.location.href = "/home";
         }
       },
     });
@@ -85,7 +85,7 @@ $(document).ready(function () {
       success: function (data) {
         $("#del_confirm").modal("hide");
         if (data == "success") {
-          window.location.href = "/pythonlogin/home";
+          window.location.href = "/home";
         }
       },
     });
