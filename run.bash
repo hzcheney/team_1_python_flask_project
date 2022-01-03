@@ -10,10 +10,10 @@ docker run --rm -d -v mysql:/var/lib/mysql \
 --network mysqlnet \
 --name mysqldb \
 -e MYSQL_ROOT_PASSWORD=test \
-mysql
+mysql:5.7
 
 # docker exec -ti mysqldb bash
-docker exec -i mysqldb sh -c 'exec mysql -uroot -p"test"' < ./accounts.sql
+# docker exec -i mysqldb sh -c 'exec mysql -uroot -p"test"' < ./accounts.sql
 
 echo " mysql succes"
 
