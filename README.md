@@ -1,3 +1,27 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [第一小组2021年大作业](#%E7%AC%AC%E4%B8%80%E5%B0%8F%E7%BB%842021%E5%B9%B4%E5%A4%A7%E4%BD%9C%E4%B8%9A)
+  - [中文(Chinese)](#%E4%B8%AD%E6%96%87chinese)
+  - [功能：](#%E5%8A%9F%E8%83%BD)
+  - [项目介绍](#%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D)
+    - [项目功能介绍](#%E9%A1%B9%E7%9B%AE%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D)
+  - [运行步骤](#%E8%BF%90%E8%A1%8C%E6%AD%A5%E9%AA%A4)
+    - [一键运行](#%E4%B8%80%E9%94%AE%E8%BF%90%E8%A1%8C)
+    - [具体运行流程](#%E5%85%B7%E4%BD%93%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B)
+  - [功能截图](#%E5%8A%9F%E8%83%BD%E6%88%AA%E5%9B%BE)
+  - [English](#english)
+    - [Requirements(Minimum)](#requirementsminimum)
+    - [Requirements ,Packages used and Installation](#requirements-packages-used-and-installation)
+    - [Installation](#installation)
+    - [1 .Create an environment](#1-create-an-environment)
+    - [2 .Activate the environment](#2-activate-the-environment)
+    - [3 .Install the requirements](#3-install-the-requirements)
+    - [4. Run the application](#4-run-the-application)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 第一小组2021年大作业
 
 ## 中文(Chinese)
